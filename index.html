@@ -1,13 +1,95 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
   <head>
     <meta charset="UTF-8">
-    <link rel="icon" href="/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vite App</title>
+    
+    <!-- Primary Meta Tags -->
+    <title>Go Playground - Run Go Code in Browser | Interactive REPL</title>
+    <meta name="description" content="A browser-based interactive Go code editor with instant execution. Write, run, and test Go code directly in your browser with secure sandboxed execution.">
+    <meta name="keywords" content="Go, Golang, Playground, REPL, Code Editor, Online Compiler, Sandbox">
+    <meta name="author" content="Your Name">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="/go.svg" type="image/svg+xml">    
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- Open Graph / Facebook (Social Media) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://your-go-playground-url.com/">
+    <meta property="og:title" content="Go Playground - Run Go Code in Browser">
+    <meta property="og:description" content="Interactive Go code editor with instant execution. Write, run, and test Go code directly in your browser.">
+    <meta property="og:image" content="https://your-go-playground-url.com/social-preview.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://your-go-playground-url.com/">
+    <meta property="twitter:title" content="Go Playground - Run Go Code in Browser">
+    <meta property="twitter:description" content="Interactive Go code editor with instant execution. Write, run, and test Go code directly in your browser.">
+    <meta property="twitter:image" content="https://your-go-playground-url.com/social-preview.png">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json">
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#3b82f6" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#1e3a8a" media="(prefers-color-scheme: dark)">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://your-go-playground-url.com/">
+    
+    <!-- Mobile Specific -->
+    <meta name="apple-mobile-web-app-title" content="Go Playground">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="mobile-web-app-capable" content="yes">
+        
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:;">
   </head>
   <body>
     <div id="app"></div>
     <script type="module" src="/src/main.js"></script>
+    
+   
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Go Playground",
+      "url": "https://your-go-playground-url.com/",
+      "description": "Interactive Go code editor with instant execution",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://your-go-playground-url.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Go Playground",
+      "description": "Interactive Go code editor with instant execution",
+      "url": "https://your-go-playground-url.com/",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Web",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Go Playground - Run Go Code in Browser",
+      "description": "Interactive Go code editor with instant execution. Write, run, and test Go code directly in your browser.",
+      "url": "https://your-go-playground-url.com/",
+      "mainEntityOfPage": {
+        "@type": "WebSite",
+        "@id": "https://your-go-playground-url.com/"
+      }
+    }
+    </script>
   </body>
 </html>

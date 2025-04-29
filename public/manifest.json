@@ -1,0 +1,23 @@
+{
+    "name": "Go Playground",
+    "short_name": "Go REPL",
+    "description": "Browser-based Go code editor with instant execution",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#00ADD8",
+    "icons": [
+      {
+        "src": "/go.png",
+        "type": "image/png",
+        "sizes": "192x192",
+        "purpose": "any maskable"
+      },
+      {
+        "src": "/go.png",
+        "type": "image/png",
+        "sizes": "512x512",
+        "purpose": "any maskable"
+      }
+    ]
+  }
