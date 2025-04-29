@@ -14,10 +14,7 @@ export const useCodeStore = defineStore('code', {
       this.output = ''
       this.error  = ''
       try {
-        const resp = await axios.post(
-          'http://repl-go-api-env.eba-kmsvh4jx.us-west-2.elasticbeanstalk.com/run',
-          { code: this.code }  
-        )
+        const resp = await axios.post('/api/run', { code: this.code });
         this.output = resp.data.output
         this.error  = resp.data.error
       } catch (e) {
