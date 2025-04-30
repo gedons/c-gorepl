@@ -189,7 +189,7 @@
                 </svg>
               </a>
             </div>
-            <a href="#" target="_blank" rel="noopener noreferrer"  class="px-4 py-2 bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg transition-colors flex items-center">
+            <a href="https://dev.to/gedons/building-a-go-playground-repl-from-scratch-with-docker-aws-vuejs-2e7b" target="_blank" rel="noopener noreferrer"  class="px-4 py-2 bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg transition-colors flex items-center">
               Read More              
             </a>
           </div>
