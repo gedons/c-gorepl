@@ -48,7 +48,7 @@
           </label>
 
           <label class="flex items-center space-x-2">
-            <span class="font-medium">Font Size:</span>
+            <span class="font-medium">Font:</span>
             <div class="flex items-center">
               <input 
                 type="range" 
