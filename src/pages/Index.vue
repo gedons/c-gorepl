@@ -100,7 +100,7 @@
       </div>
 
       <!-- Output / Error -->
-      <div class="mt-8 space-y-6">
+      <div ref="outputSection" class="mt-8 space-y-6">
         <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden transition-all duration-300">
           <div class="px-4 py-3 bg-gradient-to-r from-blue-600 to-teal-500 text-white flex items-center">
             <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -120,7 +120,7 @@
           </div>
           <pre class="p-4 max-h-64 overflow-auto whitespace-pre-wrap text-red-600 dark:text-red-400 font-mono text-sm leading-relaxed">{{ error }}</pre>
         </div>
-      </div>
+    </div>
 
       <!-- About Section -->
       <div class="mt-16 bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden">
@@ -406,6 +406,11 @@ function copyCode() {
 
 async function runCode() {
   await store.runCode()
+
+    // Scroll to the output section
+    if (outputSection.value) {
+    outputSection.value.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
 }
 
 onMounted(() => {
